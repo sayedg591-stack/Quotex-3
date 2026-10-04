@@ -10,7 +10,7 @@ export function Dashboard() {
   if (!state) return null;
 
   const pnlTone = state.daily_pnl > 0 ? "up" : state.daily_pnl < 0 ? "down" : "default";
-  const modes: Mode[] = ["off", "manual", "auto"];
+  const modes: Mode[] = ["off", "manual", "auto"];  
   const modeLabels: Record<Mode, string> = { off: "Off", manual: "Manual", auto: "Auto" };
 
   const setMode = (m: Mode) => {
