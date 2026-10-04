@@ -8,7 +8,7 @@ All critical bugs have been fixed. This guide helps verify the fixes work correc
 ## Unit Tests
 
 ### 1. Authentication Security
-```python
+```python  
 # Test email validation
 from backend.app.auth import _EMAIL_RE
 
